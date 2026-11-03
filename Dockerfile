@@ -1,7 +1,5 @@
-FROM ubuntu:latest
+FROM python:3.9-slim
+WORKDIR /app
+copy app.py .
 
-RUN apt-get update && apt-get install -y nginx
-WORKDIR /var/www/html/
-COPY index.html .
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["python", "app.py"]
