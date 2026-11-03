@@ -57,4 +57,3 @@ docker save -o myimage.tar <image-name> #save image to tar file
 docker load -i myimage.tar #Load image from tar file
 those command run for the convert into the tar file and this tar file save my local and after that this tar file i transfer the anoter computer or server , docker -i myimage.tar this command run for ther import the tar file
 
-
